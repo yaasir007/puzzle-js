@@ -32,3 +32,13 @@ const moveTile = (tile) => {
   // 5. Add empty class to `tile`
   tile.classList.add("empty");
 };
+
+// for each tile
+tiles.forEach((tile) => {
+  // add event listener
+  tile.addEventListener('click', (event) => {
+    if(canMove(tile)) {
+      moveTile(tile);
+    }
+  })
+});
