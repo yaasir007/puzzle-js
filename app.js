@@ -19,3 +19,16 @@ const canMove = (tile) => {
     (tileRow === emptyTileRow && tileCol === emptyTileCol - 1)
   );
 };
+
+const moveTile = (tile) => {
+  // 1. Select empty tile
+  const emptyTile = document.querySelector(".empty");
+  // 2. Replace its content with the `tile`'s content
+  emptyTile.innerHTML = tile.innerHTML;
+  // 2. Remove its `tile` class
+  emptyTile.classList.remove("empty");
+  // 4. Empty `tile`'s content
+  tile.innerHTML = "";
+  // 5. Add empty class to `tile`
+  tile.classList.add("empty");
+};
