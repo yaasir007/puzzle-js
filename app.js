@@ -42,3 +42,10 @@ tiles.forEach((tile) => {
     }
   })
 });
+
+
+const btn = document.querySelector("#show-hint");
+btn.addEventListener("click", () => {
+  const hint = document.querySelector(".hint");
+  hint.classList.toggle("active");
+});
