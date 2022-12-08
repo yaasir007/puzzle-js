@@ -38,3 +38,18 @@ td {
 .empty {
   background-color: black;
 }
+
+button {
+  margin-top: 40px;
+}
+
+.hint {
+  margin-top: 16px;
+  opacity: 0;
+  transition: .3s opacity ease;
+}
+
+.active {
+  font-size: 2rem;
+  opacity: 1;
+}
